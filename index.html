@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Modulo I - Primeiros passos com HTML</title>
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }   
+
+        h1{
+        text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Página - Modulo I - Primeiros passos com HTML</h1>
+    <hr>
+    <h2 id="indice">Índice</h2>
+    <h3>Como é uma estrutura básica de HTML?</h3>
+    <ul>
+        <li><a href="#header">Header/Cabeçalho</a></li>
+        <li><a href="#body">Body/Corpo do texto</a></li>
+        <li><a href="#tags">Alguns exemplos de Tags utilizadas</a></li>
+        <li><a href="#footer">Footer/Rodapé</a></li>
+    </ul>
+
+    <h3 id="header">O que é o header?</h3>
+    <p>A tag <i>header</i> representa em um documento HTML um grupo de suporte seja introdutório ou para navegação, podendo conter <u>textos, links para navegação, imagens, etc.</u></p>
+
+    <h3 id="body">Falando um pouco sobre a Tag Body</h3>
+    <p>A tag <i>body</i> tem a função de ser o corpo da página, nesta tag vão todas as outras (incluindo as tags <i>header, footer, main, nav, etc</i>).</p>
+    <p>É necessário que o <body> tenha ao menos um elemento "filho", ou seja, uma ou mais tags HTML dentro dele. Nesse exemplo, usamos a tag <h1> , que indica o título principal da página.</p>
+    
+    <h3 id="tags">Agora irei citar alguns exemplos de tags utilizadas em HTML</h3>
+    <p><i>main</i> é a tag que define o <mark>elemento principal</mark> em um documento HTML, entendendo-se como conteúdo principal. <strong>O mesmo pode existir uma única vez no código.</strong> </p>
+    <p>dentro do elemento <i>main</i> não deverão ser incluidas seções da página que sejam comuns a todo o site ou aplicação, tais como mecanismos de navegação, informações de copyright, logotipo e campos de busca (a não ser, é claro, caso a função principal do documento seja fazer algum tipo de busca).</p>
+    
+    <p><i>img</i> é a tag que adiciona uma imagem ao documento, devendo ter o link da imagem caso seja uma imagem da internet e/ou caminho do arquivo em seus próprios documentos</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s" alt="HTML">
+    <p>o atributo <strong>alt</strong> define um texto alternativo que descreve a imagem. Os usuários irão ver o texto se a URL da imagem estiver errada, a imagem não estiver em um dos formatos suportados ou até a imagem ser baixada.</p>
+    
+    <p>Já a tag <i>nav</i> representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação.</p>
+    <p>Nem todos os links de um documento devem estar dentro de um elemento <i>nav</i>, o qual é destinado apenas para grupos importantes de links de navegação; tipicamente o elemento <i>footer</i> contém uma lista de links que não precisam estar em um elemento <i>nav</i>.
+    Um documento pode ter vários elementos <i>nav</i>, por exemplo, um para navegação no site e outro para navegação dentro da página.
+    Agentes de usuário, como leitores de tela para usuários deficientes, podem utilizar este elemento para determinar se a renderização inicial do conteúdo do mesmo deve ser omitida.</p>
+
+    <footer id="footer">
+        <h2>Links de referências</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+            <li><a href="https://www.alura.com.br/apostila-html-css-javascript/03CA-a-spec-html#:~:text=A%20tag%20cont%C3%A9m%20o,mais%20tags%20HTML%20dentro%20dele.&text=Nesse%20exemplo%2C%20usamos%20a%20tag,o%20t%C3%ADtulo%20principal%20da%20p%C3%A1gina." target="_blank">https://www.alura.com.br/apostila-html-css-javascript</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
